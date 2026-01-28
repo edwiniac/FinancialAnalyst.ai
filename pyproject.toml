@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financialanalyst-ai"
+version = "0.1.0"
+description = "AI-powered financial analyst agent for investment research"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Edwin Isac", email = "edwinisac007@gmail.com" }
+]
+keywords = ["ai", "finance", "stocks", "trading", "llm", "agent", "investment"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "openai>=1.0.0",
+    "yfinance>=0.2.36",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "click>=8.0.0",
+    "rich>=13.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+analyst = "analyst:cli"
+
+[project.urls]
+Homepage = "https://github.com/edwiniac/FinancialAnalyst.ai"
+Repository = "https://github.com/edwiniac/FinancialAnalyst.ai"
+Issues = "https://github.com/edwiniac/FinancialAnalyst.ai/issues"
